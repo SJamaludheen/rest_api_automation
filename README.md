@@ -76,7 +76,7 @@ the name of the test running as parameter and returns the schemafile specific to
 
 schema files are defined under src>test>resources>schema. These files define the required fields to look for in a json. Also, the  expected data type (ex: integer, string, boolean, etc.) of the properties in the json response received by the test.
 
-## Payload json handling in the framework
+## JSON payload handling in the framework
 
 All the libraries used in the framework are listed as dependencies in pom.xml of the project. GSON is one of them.
 As part of the request we will be sending payloads to some of the endpoints. We use GSON to load the request payloads stored under folder src>test>resources>requestpayloads into java object instances. The conversion happens in src>test>java>requests>RequestBuilder.
